@@ -1,0 +1,28 @@
+
+<html>
+<head>
+<title>Textarea Problem</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.textResize.js"></script>
+	<style type="text/css" media="screen"/>
+		body { margin: 50px; }
+		textarea{
+			margin:0;
+			padding:0;
+    		height: 150px;
+    		width: 250px;
+		}
+	</style>  
+	<script type="text/javascript">
+		$('#tex').textResize({
+  			maxlim: 70
+		});
+	</script>	
+</head>
+
+<body>
+	<textarea id="tex"></textarea>
+	<br/>
+	Remaining : <remain id="dispremain"></remain>
+</body>
+</html>
